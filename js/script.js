@@ -21,6 +21,10 @@ document.querySelector("#sect-b").addEventListener("click", () => {
     document.querySelector("#init").hidden=true;
     document.querySelector("#p4").hidden=false;
 });
+document.querySelector("#sect-b").addEventListener("click", () => {
+    document.querySelector("#init").hidden=true;
+    document.querySelector("#p4").hidden=false;
+});
 
 /*  以下为原作者代码
 // 名字设定
