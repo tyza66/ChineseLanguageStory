@@ -6,6 +6,8 @@ document.querySelector("#start2").hidden=true;
 document.querySelector("#init").hidden=true;
 document.querySelector("#p4").hidden=true;
 document.querySelector("#fail").hidden=true;
+document.querySelector("#p5-1").hidden=true;
+document.querySelector("#p5-2").hidden=true;
 //背景初始化
 document.querySelector("#root").style.backgroundImage = "url(./images/1.jpg)"
 //按钮点击事件
@@ -30,11 +32,11 @@ document.querySelector("#sect-b").addEventListener("click", () => {
 });
 document.querySelector("#answer1-btn").addEventListener("click", () => {
      document.querySelector("#p4").hidden=true;
-     if(document.querySelector("#answer1").value=="间"&&who==2){
-        
+     if((document.querySelector("#answer1").value=="间"&&who==2)||(document.querySelector("#answer1").value!="间"&&who==1)){
+        document.querySelector("#p5-1").hidden=false;
     }
     else{
-        document.querySelector("#fail").hidden=false;
+        document.querySelector("#fail").hidden=true;
     }
 });
 document.querySelector("#restart").addEventListener("click", () => {
