@@ -1,3 +1,28 @@
+//后面章节页面隐藏
+document.querySelector("#start2").hidden=true;
+document.querySelector("#init").hidden=true;
+document.querySelector("#p4").hidden=true;
+//背景初始化
+document.querySelector("#root").style.backgroundImage = "url(./images/2.jpg)"
+//按钮点击事件
+document.querySelector("#start1-btn").addEventListener("click", () => {
+    document.querySelector("#start1").hidden=true;
+    document.querySelector("#start2").hidden=false;
+});
+document.querySelector("#start2-btn").addEventListener("click", () => {
+    document.querySelector("#start2").hidden=true;
+    document.querySelector("#init").hidden=false;
+});
+document.querySelector("#sect-a").addEventListener("click", () => {
+    document.querySelector("#init").hidden=true;
+    document.querySelector("#p4").hidden=false;
+});
+document.querySelector("#sect-b").addEventListener("click", () => {
+    document.querySelector("#init").hidden=true;
+    document.querySelector("#p4").hidden=false;
+});
+
+/*  以下为原作者代码
 // 名字设定
 var playername;
 document.querySelector("#playername-btn").addEventListener("click", () => {
@@ -257,3 +282,4 @@ root.style.backgroundRepeat="no-repeat";
 root.style.backgroundPosition = "center center";
 root.style.backgroundAttachment="fixed";
 root.style.backgroundSize = "cover";
+*/

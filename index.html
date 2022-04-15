@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>学汉语用汉字，弘扬汉语言文化</title>
     <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <style>
         p {
@@ -51,23 +51,53 @@
                 width: 60%;
             }
         }
+        #start1,#start2{
+            display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+        }
+        #blue{
+            color: blue;
+        }
     </style>
 </head>
 
 <body id="root">
     <div class="container border border-warning" style="max-width: 960px;">
-        <!-- 输入名字 -->
+        <!-- NEW第一段 -->
+        <div id="start1">
+            <p class="p-1 text-center">
+                自盘古开天辟地以后，就在天地间到处游历，这时女娲是一个人身龙尾的女神，她游历人间时十分羡慕盘古身上优美的结构，但她认为这样的仿造不够完美，于是她融合了鸟兽鱼虫的朝气与活泼、自己的聪明才智，用河床上的泥土捏泥人，很快你就被捏造出来。</p>        
+                    <button class="btn btn-outline-dark" id="start1-btn">继续</button>
+        </div>
+        <div id="start2">
+            <p class="p-1 text-center">
+                女娲越捏越熟练，于是成千上万个跟你相似的人便被捏造出来，让男女配合生儿育女，使人类能繁衍至今。</p>
+                <button class="btn btn-outline-dark" id="start2-btn">继续</button>
+        </div>
         <div id="init">
             <p class="p-2 text-center">
-                1948年9月12日，林彪、罗荣桓率东北解放军发动攻击。连克辽宁多县、国民党军被分割在锦州、锦西、山海关地区。蒋介石急调11个师，于10月10日至15日猛攻塔山，以解锦州之围，但未能突破解放军的阵地。</p>
-            <p class="p-2 text-center">你是出生在锦州市的一名青少年，从小立志参军。</p>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default">名为</span>
-                <input type="text" name="playername" id="playername" class="form-control">
-                <button class="btn btn-outline-dark" id="playername-btn">确认</button>
+                可天有不测风云，水神公共和火神祝融在玩游戏，路过的你碰巧遇见，两人势均力敌的样子令你十分好奇这个游戏，你看了过去，他们在玩加笔画的游戏，你决定帮一个神。
+                </p>
+            <p class="p-2 text-center" id="blue">请选择要帮助的对象</p>
+            <div class="btn-group btn-group-lg  container-fluid" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-danger" id="sect-a">火神祝融</button>
+                <button type="button" class="btn btn-primary" id="sect-b">水神共工</button>
             </div>
         </div>
-        <!-- 第一段 -->
+        <div id="p4">
+            <p class="p-2 text-center" id="blue">问题</p>
+            <p class="p-2 text-center" id="blue">问字加一笔可以变成什么字             </p>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">答案</span>
+                <input type="text" name="answer1" id="answer1" class="form-control">
+                <button class="btn btn-outline-dark" id="answer1-btn">确认</button>
+            </div>
+        </div>
+        <!-- NEW第二段 -->
+        <!-- 第二段 -->
+        <!--
         <div id="sect1">
             <p class="p-2 text-center">辽沈战役开始之前，急切希望参军的你离开了家里，决心去参军。</p>
             <p class="p-2 text-center">下面请做出你的选择</p>
@@ -96,8 +126,9 @@
             <div id="sect1-1-res-b">
                 <p class="p-2 text-center">投降之后的你，留在了解放军，最终取得了辽沈战役的胜利。</p>
             </div>
-        </div>
+        </div>-->
         <!-- 第二段 -->
+        <!--
         <div id="sect2">
             <p class="p-2 text-center">第一次作战在一片山林中，火光晃得你眼睛难受，一旁战友的尸体令第一个上战场的你感到恐惧。</p>
             <p class="p-2 text-center">你选择</p>
@@ -111,8 +142,9 @@
             <div id="sect2-res-b">
                 <p class="p-2 text-center">第一次作战的艰难让你感到力不从心。</p>
             </div>
-        </div>
+        </div>-->
         <!-- 第三段 -->
+        <!--
         <div id="sect3">
             <p class="p-2 text-center">这天军队外出，你路过了一片不知是谁家的苹果树，你感到十分口渴。</p>
             <p class="p-2 text-center">你选择</p>
@@ -128,8 +160,9 @@
             <div id="sect3-res-b">
                 <p class="p-2 text-center">因为不想破坏老百姓辛勤的劳作，你忍着渴意路过，班长夸赞了你和战友。</p>
             </div>
-        </div>
+        </div>-->
         <!-- 第四段 -->
+        <!--
         <div id="sect4">
             <p class="p-2 text-center">
                 由于人民解放军有严格的爱民纪律，所以在攻打锦州的几十大军中没有一个人摘老百姓一个苹果，此事当时轰动了全国，也感动了毛泽东，毛主席给了很高的评价。某天，你训练归来，听到林彪仿佛正在与毛主席通话争辩，好像是对先攻打长春还是锦州有了争议，你对此事有自己的见解。
@@ -145,8 +178,9 @@
             <div id="sect4-res-b">
                 <p class="p-2 text-center">林彪听了你的见解，又结合了毛主席的想法，终于被说服。</p>
             </div>
-        </div>
+        </div>-->
         <!-- 第五段 -->
+        <!--
         <div id="sect5">
             <p class="p-2 text-center">
                 决定好了作战计划，傍晚班长交给你和战友个任务，去Y地（国民党九兵团东北驻扎地）侦察弹药问题，你和战友在执行任务时不幸分开，分开之后你去到了一个房间，偷偷潜进去后发现了一些机密文件，这时门后传来脚步，你躲在门后，在他进来后你
@@ -161,8 +195,9 @@
             <div id="sect5-res-b">
                 <p class="p-2 text-center">对方发现了你，并喊来援兵，你的战友因为你的失误接连被发现，本次作战失败，无一人生还。</p>
             </div>
-        </div>
+        </div>-->
         <!-- 第六段 -->
+        <!--
         <div id="sect6">
             <p class="p-2 text-center">
                 之后我东北解放军以一部分兵力围困长春，公开提出“练好兵，打长春”的口号，造成打长春的假象。你在去长春的队伍中，觉得自己还是想去解救老家锦州，跟上级提出想去那边，上级拒绝了你，你决定</p>
@@ -182,7 +217,7 @@
                 就在国民党军举棋未定的时候（是退出还是坚守东北地区），我军突然遣主力南下北宁线，一举攻占锦州，造成对东北境内国民党部队的“关门打狗”之势，随后在运动中歼灭驰援锦州的国民党军主力廖耀湘兵团五个军十二个师共十万多人。
                 逐渐你适应了军队的生活，并且做得越来越好，立了很多功劳，辽沈战役最终以共产党的胜利而告终。
             </p>
-        </div>
+        </div>-->
         <br>
         <div class="alerter text-center" role="alert">
             本故事纯属虚构
