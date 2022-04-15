@@ -36,8 +36,13 @@ document.querySelector("#answer1-btn").addEventListener("click", () => {
         document.querySelector("#p5-1").hidden=false;
     }
     else{
-        document.querySelector("#fail").hidden=true;
+        document.querySelector("#p5-2").hidden=false;
     }
+});
+document.querySelector("#next1").addEventListener("click", () => {
+    document.querySelector("#p5-1").hidden=true;
+    document.querySelector("#p5-2").hidden=true;
+    document.querySelector("#p6").hidden=false;
 });
 document.querySelector("#restart").addEventListener("click", () => {
     location.reload();
