@@ -8,6 +8,37 @@ document.querySelector("#p4").hidden=true;
 document.querySelector("#fail").hidden=true;
 document.querySelector("#p5-1").hidden=true;
 document.querySelector("#p5-2").hidden=true;
+document.querySelector("#p6").hidden=true;
+document.querySelector("#p7").hidden=true;
+document.querySelector("#p8").hidden=true;
+document.querySelector("#p9").hidden=true;
+document.querySelector("#p10").hidden=true;
+document.querySelector("#p11").hidden=true;
+document.querySelector("#p12").hidden=true;
+document.querySelector("#p13").hidden=true;
+document.querySelector("#p14").hidden=true;
+document.querySelector("#p15").hidden=true;
+document.querySelector("#p16").hidden=true;
+document.querySelector("#p17").hidden=true;
+document.querySelector("#p18").hidden=true;
+document.querySelector("#p19").hidden=true;
+document.querySelector("#p20").hidden=true;
+document.querySelector("#p21").hidden=true;
+document.querySelector("#p22").hidden=true;
+document.querySelector("#p23").hidden=true;
+document.querySelector("#p24").hidden=true;
+document.querySelector("#p25").hidden=true;
+document.querySelector("#p26").hidden=true;
+document.querySelector("#p27").hidden=true;
+document.querySelector("#p28").hidden=true;
+document.querySelector("#p29").hidden=true;
+document.querySelector("#p30").hidden=true;
+document.querySelector("#p31").hidden=true;
+document.querySelector("#p32").hidden=true;
+document.querySelector("#p33").hidden=true;
+document.querySelector("#p34").hidden=true;
+
+
 //背景初始化
 document.querySelector("#root").style.backgroundImage = "url(./images/1.jpg)"
 //按钮点击事件
@@ -43,6 +74,35 @@ document.querySelector("#next1").addEventListener("click", () => {
     document.querySelector("#p5-1").hidden=true;
     document.querySelector("#p5-2").hidden=true;
     document.querySelector("#p6").hidden=false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/3.1.png)"
+});
+document.querySelector("#next1-1").addEventListener("click", () => {
+    document.querySelector("#p5-1").hidden=true;
+    document.querySelector("#p5-2").hidden=true;
+    document.querySelector("#p6").hidden=false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/3.1.png)"
+});
+document.querySelector("#next2").addEventListener("click", () => {
+    document.querySelector("#p6").hidden=true;
+    document.querySelector("#p7").hidden=false;
+});
+
+document.querySelector("#next3").addEventListener("click", () => {
+    document.querySelector("#p7").hidden=true;
+    document.querySelector("#p8").hidden=false;
+});
+document.querySelector("#next4").addEventListener("click", () => {
+    document.querySelector("#p8").hidden=true;
+    document.querySelector("#p9").hidden=false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/3.2.png)"
+});
+document.querySelector("#answer2-btn").addEventListener("click", () => {
+    document.querySelector("#p9").hidden=true;
+    if(document.querySelector("#answer2").value=="末"){
+        document.querySelector("#p10").hidden=false;
+    }else{
+
+    }
 });
 document.querySelector("#restart").addEventListener("click", () => {
     location.reload();
