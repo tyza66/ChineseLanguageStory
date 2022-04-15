@@ -1,9 +1,13 @@
+//全局变量
+    //帮助谁
+    var who = 0; //火神1，水神2，默认0
 //后面章节页面隐藏
 document.querySelector("#start2").hidden=true;
 document.querySelector("#init").hidden=true;
 document.querySelector("#p4").hidden=true;
+document.querySelector("#fail").hidden=true;
 //背景初始化
-document.querySelector("#root").style.backgroundImage = "url(./images/2.jpg)"
+document.querySelector("#root").style.backgroundImage = "url(./images/1.jpg)"
 //按钮点击事件
 document.querySelector("#start1-btn").addEventListener("click", () => {
     document.querySelector("#start1").hidden=true;
@@ -12,18 +16,29 @@ document.querySelector("#start1-btn").addEventListener("click", () => {
 document.querySelector("#start2-btn").addEventListener("click", () => {
     document.querySelector("#start2").hidden=true;
     document.querySelector("#init").hidden=false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/2.png)"
 });
 document.querySelector("#sect-a").addEventListener("click", () => {
     document.querySelector("#init").hidden=true;
     document.querySelector("#p4").hidden=false;
+    who = 1;
 });
 document.querySelector("#sect-b").addEventListener("click", () => {
     document.querySelector("#init").hidden=true;
     document.querySelector("#p4").hidden=false;
+    who = 2;
 });
-document.querySelector("#sect-b").addEventListener("click", () => {
-    document.querySelector("#init").hidden=true;
-    document.querySelector("#p4").hidden=false;
+document.querySelector("#answer1-btn").addEventListener("click", () => {
+     document.querySelector("#p4").hidden=true;
+     if(document.querySelector("#answer1").value=="间"&&who==2){
+        
+    }
+    else{
+        document.querySelector("#fail").hidden=false;
+    }
+});
+document.querySelector("#restart").addEventListener("click", () => {
+    location.reload();
 });
 
 /*  以下为原作者代码
