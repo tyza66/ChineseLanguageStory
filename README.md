@@ -1,4 +1,4 @@
-# ChineseLanguageStory-Web
+# ChineseLanguageStory
 ### 汉语言故事
 [![hyy.rth.app](https://img.shields.io/badge/hyy.rth.app-grey)](https://hyy.rth.app/)  
 在原有的网页小游戏基础上进行二次创作。  
