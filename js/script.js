@@ -1,109 +1,301 @@
 //全局变量
-    //帮助谁
-    var who = 0; //火神1，水神2，默认0
+//帮助谁
+var who = 0; //火神1，水神2，默认0
 //后面章节页面隐藏
-document.querySelector("#start2").hidden=true;
-document.querySelector("#init").hidden=true;
-document.querySelector("#p4").hidden=true;
-document.querySelector("#fail").hidden=true;
-document.querySelector("#p5-1").hidden=true;
-document.querySelector("#p5-2").hidden=true;
-document.querySelector("#p6").hidden=true;
-document.querySelector("#p7").hidden=true;
-document.querySelector("#p8").hidden=true;
-document.querySelector("#p9").hidden=true;
-document.querySelector("#p10").hidden=true;
-document.querySelector("#p11").hidden=true;
-document.querySelector("#p12").hidden=true;
-document.querySelector("#p13").hidden=true;
-document.querySelector("#p14").hidden=true;
-document.querySelector("#p15").hidden=true;
-document.querySelector("#p16").hidden=true;
-document.querySelector("#p17").hidden=true;
-document.querySelector("#p18").hidden=true;
-document.querySelector("#p19").hidden=true;
-document.querySelector("#p20").hidden=true;
-document.querySelector("#p21").hidden=true;
-document.querySelector("#p22").hidden=true;
-document.querySelector("#p23").hidden=true;
-document.querySelector("#p24").hidden=true;
-document.querySelector("#p25").hidden=true;
-document.querySelector("#p26").hidden=true;
-document.querySelector("#p27").hidden=true;
-document.querySelector("#p28").hidden=true;
-document.querySelector("#p29").hidden=true;
-document.querySelector("#p30").hidden=true;
-document.querySelector("#p31").hidden=true;
-document.querySelector("#p32").hidden=true;
-document.querySelector("#p33").hidden=true;
-document.querySelector("#p34").hidden=true;
-
-
+document.querySelector("#start2").hidden = true;
+document.querySelector("#init").hidden = true;
+document.querySelector("#p4").hidden = true;
+document.querySelector("#fail").hidden = true;
+document.querySelector("#p5-1").hidden = true;
+document.querySelector("#p5-2").hidden = true;
+document.querySelector("#p6").hidden = true;
+document.querySelector("#p7").hidden = true;
+document.querySelector("#p8").hidden = true;
+document.querySelector("#p9").hidden = true;
+document.querySelector("#p10").hidden = true;
+document.querySelector("#p11").hidden = true;
+document.querySelector("#p12").hidden = true;
+document.querySelector("#p13").hidden = true;
+document.querySelector("#p14").hidden = true;
+document.querySelector("#p15").hidden = true;
+document.querySelector("#p16").hidden = true;
+document.querySelector("#p17").hidden = true;
+document.querySelector("#p18").hidden = true;
+document.querySelector("#p19").hidden = true;
+document.querySelector("#p20").hidden = true;
+document.querySelector("#p21").hidden = true;
+document.querySelector("#p22").hidden = true;
+document.querySelector("#p23").hidden = true;
+document.querySelector("#p24").hidden = true;
+document.querySelector("#p25").hidden = true;
+document.querySelector("#p26").hidden = true;
+document.querySelector("#p27").hidden = true;
+document.querySelector("#p28").hidden = true;
+document.querySelector("#p29").hidden = true;
+document.querySelector("#p30").hidden = true;
+document.querySelector("#p31").hidden = true;
+document.querySelector("#p32").hidden = true;
+document.querySelector("#p33").hidden = true;
+document.querySelector("#p34").hidden = true;
+document.querySelector("#p35").hidden = true;
+document.querySelector("#p36").hidden = true;
+document.querySelector("#p37").hidden = true;
+document.querySelector("#p38").hidden = true;
+document.querySelector("#p39").hidden = true;
+document.querySelector("#p40").hidden = true;
+document.querySelector("#p41").hidden = true;
+document.querySelector("#p42").hidden = true;
+document.querySelector("#success").hidden = true;
 //背景初始化
 document.querySelector("#root").style.backgroundImage = "url(./images/1.jpg)"
 //按钮点击事件
 document.querySelector("#start1-btn").addEventListener("click", () => {
-    document.querySelector("#start1").hidden=true;
-    document.querySelector("#start2").hidden=false;
+    document.querySelector("#start1").hidden = true;
+    document.querySelector("#start2").hidden = false;
 });
 document.querySelector("#start2-btn").addEventListener("click", () => {
-    document.querySelector("#start2").hidden=true;
-    document.querySelector("#init").hidden=false;
+    document.querySelector("#start2").hidden = true;
+    document.querySelector("#init").hidden = false;
     document.querySelector("#root").style.backgroundImage = "url(./images/2.png)"
 });
 document.querySelector("#sect-a").addEventListener("click", () => {
-    document.querySelector("#init").hidden=true;
-    document.querySelector("#p4").hidden=false;
+    document.querySelector("#init").hidden = true;
+    document.querySelector("#p4").hidden = false;
     who = 1;
 });
 document.querySelector("#sect-b").addEventListener("click", () => {
-    document.querySelector("#init").hidden=true;
-    document.querySelector("#p4").hidden=false;
+    document.querySelector("#init").hidden = true;
+    document.querySelector("#p4").hidden = false;
     who = 2;
 });
 document.querySelector("#answer1-btn").addEventListener("click", () => {
-     document.querySelector("#p4").hidden=true;
-     if((document.querySelector("#answer1").value=="间"&&who==2)||(document.querySelector("#answer1").value!="间"&&who==1)){
-        document.querySelector("#p5-1").hidden=false;
+    document.querySelector("#p4").hidden = true;
+    if ((document.querySelector("#answer1").value == "间" && who == 2) || (document.querySelector("#answer1").value != "间" && who == 1)) {
+        document.querySelector("#p5-1").hidden = false;
     }
-    else{
-        document.querySelector("#p5-2").hidden=false;
+    else {
+        document.querySelector("#p5-2").hidden = false;
     }
 });
 document.querySelector("#next1").addEventListener("click", () => {
-    document.querySelector("#p5-1").hidden=true;
-    document.querySelector("#p5-2").hidden=true;
-    document.querySelector("#p6").hidden=false;
+    document.querySelector("#p5-1").hidden = true;
+    document.querySelector("#p5-2").hidden = true;
+    document.querySelector("#p6").hidden = false;
     document.querySelector("#root").style.backgroundImage = "url(./images/3.1.png)"
 });
 document.querySelector("#next1-1").addEventListener("click", () => {
-    document.querySelector("#p5-1").hidden=true;
-    document.querySelector("#p5-2").hidden=true;
-    document.querySelector("#p6").hidden=false;
+    document.querySelector("#p5-1").hidden = true;
+    document.querySelector("#p5-2").hidden = true;
+    document.querySelector("#p6").hidden = false;
     document.querySelector("#root").style.backgroundImage = "url(./images/3.1.png)"
 });
 document.querySelector("#next2").addEventListener("click", () => {
-    document.querySelector("#p6").hidden=true;
-    document.querySelector("#p7").hidden=false;
+    document.querySelector("#p6").hidden = true;
+    document.querySelector("#p7").hidden = false;
 });
 
 document.querySelector("#next3").addEventListener("click", () => {
-    document.querySelector("#p7").hidden=true;
-    document.querySelector("#p8").hidden=false;
+    document.querySelector("#p7").hidden = true;
+    document.querySelector("#p8").hidden = false;
 });
 document.querySelector("#next4").addEventListener("click", () => {
-    document.querySelector("#p8").hidden=true;
-    document.querySelector("#p9").hidden=false;
+    document.querySelector("#p8").hidden = true;
+    document.querySelector("#p9").hidden = false;
     document.querySelector("#root").style.backgroundImage = "url(./images/3.2.png)"
 });
+var sum = 0;
 document.querySelector("#answer2-btn").addEventListener("click", () => {
-    document.querySelector("#p9").hidden=true;
-    if(document.querySelector("#answer2").value=="末"){
-        document.querySelector("#p10").hidden=false;
-    }else{
-
+    document.querySelector("#p9").hidden = true;
+    document.querySelector("#p10").hidden = false;
+    if (document.querySelector("#answer2").value == "未") {
+        sum++;
     }
 });
+document.querySelector("#answer3-btn").addEventListener("click", () => {
+    document.querySelector("#p10").hidden = true;
+    if (document.querySelector("#answer3").value == "末") {
+        sum++;
+        if (sum == 2) {
+            document.querySelector("#p11").hidden = false;
+        }
+        else {
+            document.querySelector("#p12").hidden = false;
+        }
+    } else {
+        document.querySelector("#p12").hidden = false;
+    }
+});
+document.querySelector("#next11").addEventListener("click", () => {
+    document.querySelector("#p11").hidden = true;
+    document.querySelector("#p13").hidden = false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/4.png)"
+});
+document.querySelector("#next12").addEventListener("click", () => {
+    document.querySelector("#p12").hidden = true;
+    document.querySelector("#p13").hidden = false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/4.png)"
+});
+document.querySelector("#next13").addEventListener("click", () => {
+    document.querySelector("#p13").hidden = true;
+    document.querySelector("#p14").hidden = false;
+});
+document.querySelector("#next14").addEventListener("click", () => {
+    document.querySelector("#p14").hidden = true;
+    document.querySelector("#p15").hidden = false;
+});
+document.querySelector("#next15").addEventListener("click", () => {
+    document.querySelector("#p15").hidden = true;
+    document.querySelector("#p16").hidden = false;
+});
+document.querySelector("#next16").addEventListener("click", () => {
+    document.querySelector("#p16").hidden = true;
+    document.querySelector("#p17").hidden = false;
+});
+document.querySelector("#answer4-btn").addEventListener("click", () => {
+    document.querySelector("#p17").hidden = true;
+    if (document.querySelector("#answer4").value == "炎黄子孙、泱泱华夏、落地生根、绿水青山") {
+        document.querySelector("#p18").hidden = false;
+    } else {
+        document.querySelector("#p19").hidden = false;
+    }
+});
+document.querySelector("#next18").addEventListener("click", () => {
+    document.querySelector("#p18").hidden = true;
+    document.querySelector("#p20").hidden = false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/5.1.png)"
+});
+document.querySelector("#next19").addEventListener("click", () => {
+    document.querySelector("#p19").hidden = true;
+    document.querySelector("#fail").hidden = false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/5.1.png)"
+});
+document.querySelector("#next20").addEventListener("click", () => {
+    document.querySelector("#p20").hidden = true;
+    document.querySelector("#p21").hidden = false;
+});
+document.querySelector("#next21").addEventListener("click", () => {
+    document.querySelector("#p21").hidden = true;
+    document.querySelector("#p22").hidden = false;
+});
+document.querySelector("#next22").addEventListener("click", () => {
+    document.querySelector("#p22").hidden = true;
+    document.querySelector("#p23").hidden = false;
+});
+document.querySelector("#next23").addEventListener("click", () => {
+    document.querySelector("#p23").hidden = true;
+    document.querySelector("#p24").hidden = false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/5.2.png)"
+});
+document.querySelector("#answer5-btn").addEventListener("click", () => {
+    document.querySelector("#p24").hidden = true;
+    var one = document.querySelector("#answer5").value.split(",");
+    if (one.length < 5) {
+        document.querySelector("#p26").hidden = false;
+    }
+    if (one[0].substr(-1, 1) == one[1].substr(0, 1) && one[1].substr(-1, 1) == one[2].substr(0, 1) && one[2].substr(-1, 1) == one[3].substr(0, 1) && one[3].substr(-1, 1) == one[4].substr(0, 1)) {
+        document.querySelector("#p25").hidden = false;
+    }
+    else {
+        document.querySelector("#p26").hidden = false;
+    }
+});
+document.querySelector("#next25").addEventListener("click", () => {
+    document.querySelector("#p25").hidden = true;
+    document.querySelector("#p27").hidden = false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/6.1.png)"
+});
+document.querySelector("#next26").addEventListener("click", () => {
+    document.querySelector("#p26").hidden = true;
+    document.querySelector("#p27").hidden = false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/6.1.png)"
+});
+document.querySelector("#next27").addEventListener("click", () => {
+    document.querySelector("#p27").hidden = true;
+    document.querySelector("#p28").hidden = false;
+});
+document.querySelector("#next28").addEventListener("click", () => {
+    document.querySelector("#p28").hidden = true;
+    document.querySelector("#p29").hidden = false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/6.2.png)"
+});
+document.querySelector("#next29").addEventListener("click", () => {
+    document.querySelector("#p29").hidden = true;
+    document.querySelector("#p30").hidden = false;
+});
+document.querySelector("#next30").addEventListener("click", () => {
+    document.querySelector("#p30").hidden = true;
+    document.querySelector("#p31").hidden = false;
+});
+document.querySelector("#answer6-btn").addEventListener("click", () => {
+    document.querySelector("#p31").hidden = true;
+    if (document.querySelector("#answer6").value == "口日旦早圼") {
+        document.querySelector("#p33").hidden = false;
+    } else {
+        document.querySelector("#p32").hidden = false;
+    }
+});
+document.querySelector("#next32").addEventListener("click", () => {
+    document.querySelector("#p32").hidden = true;
+    document.querySelector("#p34").hidden = false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/7.1.png)"
+});
+document.querySelector("#next33").addEventListener("click", () => {
+    document.querySelector("#p33").hidden = true;
+    document.querySelector("#p34").hidden = false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/7.1.png)"
+});
+document.querySelector("#next34").addEventListener("click", () => {
+    document.querySelector("#p34").hidden = true;
+    document.querySelector("#p35").hidden = false;
+});
+document.querySelector("#next35").addEventListener("click", () => {
+    document.querySelector("#p35").hidden = true;
+    document.querySelector("#p36").hidden = false;
+});
+document.querySelector("#next36").addEventListener("click", () => {
+    document.querySelector("#p36").hidden = true;
+    document.querySelector("#p37").hidden = false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/7.3.png)"
+});
+document.querySelector("#next37").addEventListener("click", () => {
+    document.querySelector("#p37").hidden = true;
+    document.querySelector("#p38").hidden = false;
+});
+document.querySelector("#answer7-btn").addEventListener("click", () => {
+    document.querySelector("#p38").hidden = true;
+    if (document.querySelector("#answer7").value == "茉" ||
+        document.querySelector("#answer7").value == "抹" ||
+        document.querySelector("#answer7").value == "袜" ||
+        document.querySelector("#answer7").value == "沫" ||
+        document.querySelector("#answer7").value == "秣"
+    ) {
+        document.querySelector("#p40").hidden = false;
+    }
+    else {
+        document.querySelector("#p39").hidden = false;
+    }
+});
+document.querySelector("#next39").addEventListener("click", () => {
+    document.querySelector("#p39").hidden = true;
+    document.querySelector("#fail").hidden = false;
+});
+document.querySelector("#next40").addEventListener("click", () => {
+    document.querySelector("#p40").hidden = true;
+    document.querySelector("#p41").hidden = false;
+    document.querySelector("#root").style.backgroundImage = "url(./images/8.png)"
+});
+document.querySelector("#next41").addEventListener("click", () => {
+    document.querySelector("#p41").hidden = true;
+    document.querySelector("#p42").hidden = false;
+});
+document.querySelector("#next42").addEventListener("click", () => {
+    document.querySelector("#p42").hidden = true;
+    document.querySelector("#success").hidden = false;
+});
+document.querySelector("#restart2").addEventListener("click", () => {
+    location.reload();
+});
+//失败重开
 document.querySelector("#restart").addEventListener("click", () => {
     location.reload();
 });
