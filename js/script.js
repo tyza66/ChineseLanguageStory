@@ -46,6 +46,35 @@ document.querySelector("#p40").hidden = true;
 document.querySelector("#p41").hidden = true;
 document.querySelector("#p42").hidden = true;
 document.querySelector("#success").hidden = true;
+document.querySelector("#an1").hidden = true;
+document.querySelector("#an2").hidden = true;
+document.querySelector("#an3").hidden = true;
+document.querySelector("#an4").hidden = true;
+document.querySelector("#an5").hidden = true;
+document.querySelector("#an6").hidden = true;
+document.querySelector("#an7").hidden = true;
+//查看答案
+document.querySelector("#ans1").addEventListener("click", () => {
+    document.querySelector("#an1").hidden = false;
+});
+document.querySelector("#ans2").addEventListener("click", () => {
+    document.querySelector("#an2").hidden = false;
+});
+document.querySelector("#ans3").addEventListener("click", () => {
+    document.querySelector("#an3").hidden = false;
+});
+document.querySelector("#ans4").addEventListener("click", () => {
+    document.querySelector("#an4").hidden = false;
+});
+document.querySelector("#ans5").addEventListener("click", () => {
+    document.querySelector("#an5").hidden = false;
+});
+document.querySelector("#ans6").addEventListener("click", () => {
+    document.querySelector("#an6").hidden = false;
+});
+document.querySelector("#ans7").addEventListener("click", () => {
+    document.querySelector("#an7").hidden = false;
+});
 //背景初始化
 document.querySelector("#root").style.backgroundImage = "url(./images/1.jpg)"
 //按钮点击事件
@@ -107,13 +136,13 @@ var sum = 0;
 document.querySelector("#answer2-btn").addEventListener("click", () => {
     document.querySelector("#p9").hidden = true;
     document.querySelector("#p10").hidden = false;
-    if (document.querySelector("#answer2").value == "未") {
+    if (document.querySelector("#answer2").value == "未"||document.querySelector("#answer3").value == "末") {
         sum++;
     }
 });
 document.querySelector("#answer3-btn").addEventListener("click", () => {
     document.querySelector("#p10").hidden = true;
-    if (document.querySelector("#answer3").value == "末") {
+    if (document.querySelector("#answer3").value == "末"||document.querySelector("#answer3").value == "禾") {
         sum++;
         if (sum == 2) {
             document.querySelector("#p11").hidden = false;
