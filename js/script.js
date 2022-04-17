@@ -136,13 +136,13 @@ var sum = 0;
 document.querySelector("#answer2-btn").addEventListener("click", () => {
     document.querySelector("#p9").hidden = true;
     document.querySelector("#p10").hidden = false;
-    if (document.querySelector("#answer2").value == "未"||document.querySelector("#answer3").value == "末") {
+    if (document.querySelector("#answer2").value == "未" || document.querySelector("#answer3").value == "末") {
         sum++;
     }
 });
 document.querySelector("#answer3-btn").addEventListener("click", () => {
     document.querySelector("#p10").hidden = true;
-    if (document.querySelector("#answer3").value == "末"||document.querySelector("#answer3").value == "禾") {
+    if (document.querySelector("#answer3").value == "末" || document.querySelector("#answer3").value == "禾") {
         sum++;
         if (sum == 2) {
             document.querySelector("#p11").hidden = false;
