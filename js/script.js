@@ -85,7 +85,7 @@ document.querySelector("#start1-btn").addEventListener("click", () => {
 document.querySelector("#start2-btn").addEventListener("click", () => {
     document.querySelector("#start2").hidden = true;
     document.querySelector("#init").hidden = false;
-    document.querySelector("#root").style.backgroundImage = "url(./images/2.png)"
+    document.querySelector("#root").style.backgroundImage = "url(./images/2~1.png)"
 });
 document.querySelector("#sect-a").addEventListener("click", () => {
     document.querySelector("#init").hidden = true;
